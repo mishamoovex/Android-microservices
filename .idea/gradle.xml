@@ -12,7 +12,6 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/authorization" />
-            <option value="$PROJECT_DIR$/splash" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

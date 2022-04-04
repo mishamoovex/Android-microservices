@@ -2,13 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/splashF">
-
-    <fragment
-        android:id="@+id/splashF"
-        android:name="arctic.fox.splash.SplashF"
-        android:label="SplashF"
-        app:moduleName="splash" />
+    app:startDestination="@id/selectAuthMethodF">
 
     <fragment
         android:id="@+id/selectAuthMethodF"

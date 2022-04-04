@@ -7,15 +7,15 @@
     <fragment
         android:id="@+id/destination_splash"
         android:name="arctic.fox.splash.SplashF"
-        app:moduleName="splash" >
+        app:moduleName="splash">
         <action
             android:id="@+id/action_destination_splash_to_destination_authorization"
             app:destination="@id/destination_authorization" />
     </fragment>
 
-    <fragment
+    <include-dynamic
         android:id="@+id/destination_authorization"
-        android:name="fox.features.authorization.SelectAuthMethodF"
+        app:graphResName="nav_authorization"
         app:moduleName="authorization" />
 
 </navigation>

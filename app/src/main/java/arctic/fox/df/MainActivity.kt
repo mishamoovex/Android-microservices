@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        findNavController(R.id.navHost_main).navigateUp()
+        val isSuccessful = findNavController(R.id.navHost_main).navigateUp()
+        if (!isSuccessful) super.onBackPressed()
     }
 
 }

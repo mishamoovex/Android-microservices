@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/destination_selectAuthMethod">
+
+    <fragment
+        android:id="@+id/destination_selectAuthMethod"
+        android:name="fox.features.authorization.presentation.select.SelectAuthMethodF"
+        tools:layout="@layout/fragment_select_auth_method" >
+        <action
+            android:id="@+id/action_destination_selectAuthMethod_to_destination_passwordAuth"
+            app:destination="@id/destination_passwordAuth" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_passwordAuth"
+        android:name="fox.features.authorization.presentation.password.PasswordAuthF"
+        tools:layout="@layout/fragment_auth_password" />
+</navigation>

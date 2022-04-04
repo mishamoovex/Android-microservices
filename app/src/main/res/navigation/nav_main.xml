@@ -2,12 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/selectAuthMethodF">
+    app:startDestination="@id/destination_splash">
 
     <fragment
-        android:id="@+id/selectAuthMethodF"
+        android:id="@+id/destination_splash"
+        android:name="arctic.fox.splash.SplashF"
+        app:moduleName="splash" >
+        <action
+            android:id="@+id/action_destination_splash_to_destination_authorization"
+            app:destination="@id/destination_authorization" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_authorization"
         android:name="fox.features.authorization.SelectAuthMethodF"
-        app:moduleName="authorization"
-        android:label="SelectAuthMethodF" />
+        app:moduleName="authorization" />
 
 </navigation>

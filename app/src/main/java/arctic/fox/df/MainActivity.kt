@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     fun navigateToAuth() {
         findNavController(R.id.navHost_main).navigate(
-            R.id.selectAuthMethodF
+            R.id.action_destination_splash_to_destination_authorization
         )
     }
 

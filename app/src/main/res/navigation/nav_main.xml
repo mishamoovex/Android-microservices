@@ -10,4 +10,10 @@
         android:label="SplashF"
         app:moduleName="splash" />
 
+    <fragment
+        android:id="@+id/selectAuthMethodF"
+        android:name="fox.features.authorization.SelectAuthMethodF"
+        app:moduleName="authorization"
+        android:label="SelectAuthMethodF" />
+
 </navigation>

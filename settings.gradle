@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 rootProject.name = "ArtichFox Dynamic feature"
 include ':app'
 include ':splash'
+include ':features:authorization'

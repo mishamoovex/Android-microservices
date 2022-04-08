@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     defaultConfig {
@@ -33,6 +34,8 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:${versions.Navigation}")
     implementation("androidx.navigation:navigation-ui-ktx:${versions.Navigation}")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:${versions.Navigation}")
+
+    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

@@ -7,6 +7,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        classpath "com.google.gms:google-services:4.3.10"
     }
 
     ext {
@@ -16,7 +17,8 @@ buildscript {
                 "MaterialDesign"  : "1.5.0",
                 "ConstraintLayout": "2.1.3",
                 "FragmentKtx"     : "1.4.1",
-                "Navigation"      : "2.4.1"
+                "Navigation"      : "2.4.1",
+                "FirebaseAnalytics": "20.1.2"
         ]
     }
 }

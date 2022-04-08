@@ -20,6 +20,7 @@ buildscript {
                 "Navigation"      : "2.4.1",
                 "FirebaseAnalytics": "20.1.2",
                 "FirebaseEmailAuth": "21.0.3",
+                "FirebaseDF": "16.0.0-beta01",
                 "Dagger2": "2.41"
         ]
     }

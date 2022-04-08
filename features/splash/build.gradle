@@ -2,7 +2,6 @@ plugins {
     id 'com.android.dynamic-feature'
     id 'kotlin-android'
     id "kotlin-kapt"
-    id 'com.google.gms.google-services'
 }
 
 android{
@@ -21,6 +20,7 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment-ktx:${versions.Navigation}")
 
+    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
     implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
 
 

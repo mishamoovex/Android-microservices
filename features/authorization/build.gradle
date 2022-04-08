@@ -1,7 +1,6 @@
 apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'com.google.gms.google-services'
 
 android{
     buildFeatures {
@@ -22,6 +21,7 @@ dependencies {
     implementation("com.google.dagger:dagger:${versions.Dagger2}")
     kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")
 
+    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
     implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
 
 

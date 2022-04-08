@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.dynamic-feature'
+    id 'kotlin-android'
+    id "kotlin-kapt"
+}
+
+android{
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation project(":app")
+
+    implementation("androidx.core:core-ktx:${versions.CoreKtx}")
+    implementation("androidx.appcompat:appcompat:${versions.AppCompat}")
+    implementation("com.google.android.material:material:${versions.MaterialDesign}")
+    implementation("androidx.constraintlayout:constraintlayout:${versions.ConstraintLayout}")
+
+    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
+    implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
+    
+    implementation("com.google.dagger:dagger:${versions.Dagger2}")
+    kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.annotation:annotation:1.3.0'
+}

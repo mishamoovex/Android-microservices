@@ -11,7 +11,15 @@
         <action
             android:id="@+id/action_destination_splash_to_destination_authorization"
             app:destination="@id/destination_authorization" />
+        <action
+            android:id="@+id/action_destination_splash_to_destination_registration"
+            app:destination="@id/destination_registration" />
     </fragment>
+
+    <fragment
+        android:id="@+id/destination_registration"
+        android:name="arctic.fox.registration.presentation.RegistrationF"
+        app:moduleName="registration" />
 
     <include-dynamic
         android:id="@+id/destination_authorization"

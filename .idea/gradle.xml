@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/authorization" />
+            <option value="$PROJECT_DIR$/features/registration" />
             <option value="$PROJECT_DIR$/features/splash" />
           </set>
         </option>

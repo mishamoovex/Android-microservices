@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/destination_selectAuthMethod"
-        android:name="fox.features.authorization.presentation.select.SelectAuthMethodF"
+        android:name="fox.features.authorization.presentation.auth.AuthorizationF"
         tools:layout="@layout/fragment_select_auth_method" >
         <action
             android:id="@+id/action_destination_selectAuthMethod_to_destination_passwordAuth"
@@ -15,6 +15,6 @@
 
     <fragment
         android:id="@+id/destination_passwordAuth"
-        android:name="fox.features.authorization.presentation.password.PasswordAuthF"
+        android:name="fox.features.authorization.presentation.email_reset.ResetEmailPasswordF"
         tools:layout="@layout/fragment_auth_password" />
 </navigation>

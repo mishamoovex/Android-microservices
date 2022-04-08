@@ -1,6 +1,7 @@
 apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android{
     buildFeatures {
@@ -17,6 +18,12 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:${versions.ConstraintLayout}")
 
     implementation("androidx.navigation:navigation-fragment-ktx:${versions.Navigation}")
+
+    implementation("com.google.dagger:dagger:${versions.Dagger2}")
+    kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")
+
+    implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

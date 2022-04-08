@@ -19,7 +19,8 @@ buildscript {
                 "FragmentKtx"     : "1.4.1",
                 "Navigation"      : "2.4.1",
                 "FirebaseAnalytics": "20.1.2",
-                "FirebaseEmailAuth": "21.0.3"
+                "FirebaseEmailAuth": "21.0.3",
+                "Dagger2": "2.41"
         ]
     }
 }

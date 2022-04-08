@@ -1,4 +1,4 @@
-package fox.features.authorization.presentation.password
+package fox.features.authorization.presentation.email_reset
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import fox.features.authorization.databinding.FragmentAuthPasswordBinding
 
-class PasswordAuthF : Fragment(){
+class ResetEmailPasswordF : Fragment(){
 
     private var binding: FragmentAuthPasswordBinding? = null
 

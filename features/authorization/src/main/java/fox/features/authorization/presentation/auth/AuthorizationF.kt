@@ -1,4 +1,4 @@
-package fox.features.authorization.presentation.select
+package fox.features.authorization.presentation.auth
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import androidx.navigation.fragment.findNavController
 import fox.features.authorization.R
 import fox.features.authorization.databinding.FragmentSelectAuthMethodBinding
 
-class SelectAuthMethodF : Fragment() {
+class AuthorizationF : Fragment() {
 
     private var binding: FragmentSelectAuthMethodBinding? = null
-    private val viewModel: SelectAuthMethodVM by viewModels()
+    private val viewModel: AuthorizationVM by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     defaultConfig {
@@ -20,7 +21,7 @@ android {
         dataBinding true
     }
 
-    dynamicFeatures = [':features:authorization', ':features:splash']
+    dynamicFeatures = [':features:authorization', ':features:splash', ':features:registration']
 }
 
 dependencies {
@@ -33,6 +34,13 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:${versions.Navigation}")
     implementation("androidx.navigation:navigation-ui-ktx:${versions.Navigation}")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:${versions.Navigation}")
+
+    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
+    implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
+    implementation("com.google.firebase:firebase-dynamic-module-support:${versions.FirebaseDF}")
+
+    implementation("com.google.dagger:dagger:${versions.Dagger2}")
+    kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

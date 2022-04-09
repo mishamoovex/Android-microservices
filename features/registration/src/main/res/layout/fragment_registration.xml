@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <data>
-
-        <variable
-            name="vm"
-            type="fox.features.authorization.presentation.auth.AuthorizationVM" />
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_green_light"
-        android:orientation="vertical">
+        android:background="@android:color/holo_blue_dark">
 
         <TextView
-            android:id="@+id/btn_selectMethod"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@{vm.title}" />
+            android:gravity="center"
+            android:text="RegistrationF" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

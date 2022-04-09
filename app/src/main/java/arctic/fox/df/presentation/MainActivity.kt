@@ -1,12 +1,15 @@
-package arctic.fox.df
+package arctic.fox.df.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import arctic.fox.df.R
+import arctic.fox.df.di.inject
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        inject()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }

@@ -9,3 +9,4 @@ rootProject.name = "ArtichFox Dynamic feature"
 include ':app'
 include ':features:authorization'
 include ':features:splash'
+include ':features:registration'

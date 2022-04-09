@@ -1,9 +1,9 @@
-package fox.features.authorization.presentation.select
+package fox.features.authorization.presentation.auth
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SelectAuthMethodVM : ViewModel() {
+class AuthorizationVM : ViewModel() {
 
     val title = MutableLiveData("auth methods selection")
 }

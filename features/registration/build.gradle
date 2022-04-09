@@ -18,12 +18,9 @@ dependencies {
     implementation("com.google.android.material:material:${versions.MaterialDesign}")
     implementation("androidx.constraintlayout:constraintlayout:${versions.ConstraintLayout}")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:${versions.Navigation}")
-
     implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
     implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
-
-
+    
     implementation("com.google.dagger:dagger:${versions.Dagger2}")
     kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")
 

@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import arctic.fox.registration.R
 import arctic.fox.registration.databinding.FragmentRegistrationBinding
-import arctic.fox.registration.di.inject
+import arctic.fox.registration.di.Injector
 import javax.inject.Inject
 
 class RegistrationF : Fragment() {
@@ -21,7 +21,7 @@ class RegistrationF : Fragment() {
     private var binding: FragmentRegistrationBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        inject()
+        Injector.inject(this)
         super.onCreate(savedInstanceState)
     }
 
@@ -45,5 +45,10 @@ class RegistrationF : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Injector.cleanUp()
     }
 }

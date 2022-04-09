@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import arctic.fox.registration.databinding.FragmentCreateProfileBinding
-import arctic.fox.registration.di.inject
+import arctic.fox.registration.di.Injector
 import javax.inject.Inject
 
 class CreateProfileF : Fragment() {
@@ -19,7 +19,7 @@ class CreateProfileF : Fragment() {
     private var binding: FragmentCreateProfileBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        inject()
+        Injector.inject(this)
         super.onCreate(savedInstanceState)
     }
 

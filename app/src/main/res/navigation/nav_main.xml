@@ -16,9 +16,9 @@
             app:destination="@id/destination_registration" />
     </fragment>
 
-    <fragment
+    <include-dynamic
         android:id="@+id/destination_registration"
-        android:name="arctic.fox.registration.presentation.RegistrationF"
+        app:graphResName="nav_registration"
         app:moduleName="registration" />
 
     <include-dynamic

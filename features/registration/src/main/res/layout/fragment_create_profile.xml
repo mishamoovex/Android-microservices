@@ -6,20 +6,19 @@
 
         <variable
             name="vm"
-            type="arctic.fox.registration.presentation.RegistrationVM" />
+            type="arctic.fox.registration.presentation.profile.CreateProfileVM" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_dark">
+        android:background="@android:color/holo_red_light">
 
         <TextView
-            android:id="@+id/btn_registrationF"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="RegistrationF" />
+            android:text="CreateProfileF" />
 
         <TextView
             android:layout_width="wrap_content"

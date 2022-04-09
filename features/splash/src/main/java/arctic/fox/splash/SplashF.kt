@@ -26,7 +26,7 @@ class SplashF : Fragment() {
         binding = FragmentSplashBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = viewLifecycleOwner
             btnSplash.setOnClickListener {
-                (requireActivity() as MainActivity).navigateToAuth()
+                (requireActivity() as MainActivity).navigateToRegistration()
             }
         }
         return binding?.root

@@ -20,6 +20,12 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
+    fun navigateToRegistration(){
+        findNavController(R.id.navHost_main).navigate(
+            R.id.action_destination_splash_to_destination_registration
+        )
+    }
+
     override fun onBackPressed() {
         val isSuccessful = findNavController(R.id.navHost_main).navigateUp()
         if (!isSuccessful) super.onBackPressed()

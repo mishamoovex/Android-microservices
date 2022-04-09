@@ -1,4 +1,4 @@
-package arctic.fox.registration.presentation
+package arctic.fox.registration.presentation.registration
 
 import android.os.Bundle
 import android.view.LayoutInflater

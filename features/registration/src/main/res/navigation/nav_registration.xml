@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/destination_registration"
-        android:name="arctic.fox.registration.presentation.RegistrationF"
+        android:name="arctic.fox.registration.presentation.registration.RegistrationF"
         tools:layout="@layout/fragment_registration" >
         <action
             android:id="@+id/action_destination_registration_to_destination_createProfile"

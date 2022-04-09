@@ -1,7 +1,7 @@
 package arctic.fox.registration.di.registration
 
 import arctic.fox.df.di.scopes.ScreenScope
-import arctic.fox.registration.presentation.RegistrationF
+import arctic.fox.registration.presentation.registration.RegistrationF
 import dagger.Subcomponent
 
 @ScreenScope

@@ -1,4 +1,4 @@
-package arctic.fox.registration.presentation
+package arctic.fox.registration.presentation.registration
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

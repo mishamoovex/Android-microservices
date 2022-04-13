@@ -12,6 +12,7 @@ android{
 
 dependencies {
     implementation project(":app")
+    implementation project(":lib:lifecycle")
 
     implementation("androidx.core:core-ktx:${versions.CoreKtx}")
     implementation("androidx.appcompat:appcompat:${versions.AppCompat}")
@@ -20,13 +21,18 @@ dependencies {
 
     implementation("androidx.fragment:fragment-ktx:${versions.FragmentKtx}")
 
-    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
-    implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${versions.Lifecycle}")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.Lifecycle}")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:${versions.Lifecycle}")
+    implementation("androidx.lifecycle:lifecycle-common-java8:${versions.Lifecycle}")
 
     implementation("androidx.navigation:navigation-fragment-ktx:${versions.Navigation}")
     
     implementation("com.google.dagger:dagger:${versions.Dagger2}")
     kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")
+
+    implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
+    implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

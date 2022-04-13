@@ -26,6 +26,8 @@ android {
 
 dependencies {
 
+    implementation project(":lib:lifecycle")
+
     implementation("androidx.core:core-ktx:${versions.CoreKtx}")
     implementation("androidx.appcompat:appcompat:${versions.AppCompat}")
     implementation("com.google.android.material:material:${versions.MaterialDesign}")
@@ -38,6 +40,11 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics:${versions.FirebaseAnalytics}")
     implementation("com.google.firebase:firebase-auth-ktx:${versions.FirebaseEmailAuth}")
     implementation("com.google.firebase:firebase-dynamic-module-support:${versions.FirebaseDF}")
+
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${versions.Lifecycle}")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.Lifecycle}")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:${versions.Lifecycle}")
+    implementation("androidx.lifecycle:lifecycle-common-java8:${versions.Lifecycle}")
 
     implementation("com.google.dagger:dagger:${versions.Dagger2}")
     kapt("com.google.dagger:dagger-compiler:${versions.Dagger2}")

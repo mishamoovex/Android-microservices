@@ -31,6 +31,7 @@ class RegistrationF : Fragment() {
         binding = FragmentRegistrationBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = viewLifecycleOwner
             vm = viewModel
+
         }
         return binding?.root
     }

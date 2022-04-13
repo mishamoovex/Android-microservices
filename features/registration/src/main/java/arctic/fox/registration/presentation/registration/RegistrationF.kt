@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
-import arctic.fox.registration.R
 import arctic.fox.registration.databinding.FragmentRegistrationBinding
 import arctic.fox.registration.di.Injector
 import javax.inject.Inject
@@ -33,11 +31,6 @@ class RegistrationF : Fragment() {
         binding = FragmentRegistrationBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = viewLifecycleOwner
             vm = viewModel
-            btnRegistrationF.setOnClickListener {
-                findNavController().navigate(
-                    R.id.action_destination_registration_to_destination_createProfile
-                )
-            }
         }
         return binding?.root
     }
